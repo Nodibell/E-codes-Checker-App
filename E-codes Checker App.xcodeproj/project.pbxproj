@@ -11,6 +11,10 @@
 		BA42A21B29546D7F009713CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA42A21A29546D7F009713CB /* ContentView.swift */; };
 		BA42A21D29546D81009713CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA42A21C29546D81009713CB /* Assets.xcassets */; };
 		BA42A22029546D81009713CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA42A21F29546D81009713CB /* Preview Assets.xcassets */; };
+		BA470F282968362500D651B8 /* SQLiteDBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA470F272968362500D651B8 /* SQLiteDBController.swift */; };
+		BA470F2A2968366200D651B8 /* ECodeInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA470F292968366200D651B8 /* ECodeInfoModel.swift */; };
+		BA470F2C2968368C00D651B8 /* eCodesDB.db in Resources */ = {isa = PBXBuildFile; fileRef = BA470F2B2968368C00D651B8 /* eCodesDB.db */; };
+		BA470F2F2968373F00D651B8 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = BA470F2E2968373F00D651B8 /* SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		BA42A21A29546D7F009713CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA42A21C29546D81009713CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA42A21F29546D81009713CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA470F272968362500D651B8 /* SQLiteDBController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDBController.swift; sourceTree = "<group>"; };
+		BA470F292968366200D651B8 /* ECodeInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECodeInfoModel.swift; sourceTree = "<group>"; };
+		BA470F2B2968368C00D651B8 /* eCodesDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = eCodesDB.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA470F2F2968373F00D651B8 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +59,11 @@
 		BA42A21729546D7F009713CB /* E-codes Checker App */ = {
 			isa = PBXGroup;
 			children = (
+				BA470F2B2968368C00D651B8 /* eCodesDB.db */,
 				BA42A21829546D7F009713CB /* E_codes_Checker_AppApp.swift */,
 				BA42A21A29546D7F009713CB /* ContentView.swift */,
+				BA470F292968366200D651B8 /* ECodeInfoModel.swift */,
+				BA470F272968362500D651B8 /* SQLiteDBController.swift */,
 				BA42A21C29546D81009713CB /* Assets.xcassets */,
 				BA42A21E29546D81009713CB /* Preview Content */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = "E-codes Checker App";
+			packageProductDependencies = (
+				BA470F2E2968373F00D651B8 /* SQLite */,
+			);
 			productName = "E-codes Checker App";
 			productReference = BA42A21529546D7F009713CB /* E-codes Checker App.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = BA42A20C29546D7F009713CB;
+			packageReferences = (
+				BA470F2D2968373F00D651B8 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = BA42A21629546D7F009713CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA42A22029546D81009713CB /* Preview Assets.xcassets in Resources */,
+				BA470F2C2968368C00D651B8 /* eCodesDB.db in Resources */,
 				BA42A21D29546D81009713CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA470F2A2968366200D651B8 /* ECodeInfoModel.swift in Sources */,
 				BA42A21B29546D7F009713CB /* ContentView.swift in Sources */,
+				BA470F282968362500D651B8 /* SQLiteDBController.swift in Sources */,
 				BA42A21929546D7F009713CB /* E_codes_Checker_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +290,13 @@
 				DEVELOPMENT_TEAM = 72UFS7AJ5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +321,13 @@
 				DEVELOPMENT_TEAM = 72UFS7AJ5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA470F2D2968373F00D651B8 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA470F2E2968373F00D651B8 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA470F2D2968373F00D651B8 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA42A20D29546D7F009713CB /* Project object */;
 }
