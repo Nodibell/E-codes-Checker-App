@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA42A21929546D7F009713CB /* E_codes_Checker_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA42A21829546D7F009713CB /* E_codes_Checker_AppApp.swift */; };
+		BA42A21929546D7F009713CB /* E_codes_Checker_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA42A21829546D7F009713CB /* E_codes_Checker_App.swift */; };
 		BA42A21B29546D7F009713CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA42A21A29546D7F009713CB /* ContentView.swift */; };
 		BA42A21D29546D81009713CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA42A21C29546D81009713CB /* Assets.xcassets */; };
 		BA42A22029546D81009713CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA42A21F29546D81009713CB /* Preview Assets.xcassets */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		BA42A21529546D7F009713CB /* E-codes Checker App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-codes Checker App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA42A21829546D7F009713CB /* E_codes_Checker_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_codes_Checker_AppApp.swift; sourceTree = "<group>"; };
+		BA42A21829546D7F009713CB /* E_codes_Checker_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_codes_Checker_App.swift; sourceTree = "<group>"; };
 		BA42A21A29546D7F009713CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA42A21C29546D81009713CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA42A21F29546D81009713CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				BA470F2B2968368C00D651B8 /* eCodesDB.db */,
-				BA42A21829546D7F009713CB /* E_codes_Checker_AppApp.swift */,
+				BA42A21829546D7F009713CB /* E_codes_Checker_App.swift */,
 				BA42A21A29546D7F009713CB /* ContentView.swift */,
 				BA470F292968366200D651B8 /* ECodeInfoModel.swift */,
 				BA470F272968362500D651B8 /* SQLiteDBController.swift */,
@@ -158,7 +158,7 @@
 				BA470F2A2968366200D651B8 /* ECodeInfoModel.swift in Sources */,
 				BA42A21B29546D7F009713CB /* ContentView.swift in Sources */,
 				BA470F282968362500D651B8 /* SQLiteDBController.swift in Sources */,
-				BA42A21929546D7F009713CB /* E_codes_Checker_AppApp.swift in Sources */,
+				BA42A21929546D7F009713CB /* E_codes_Checker_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

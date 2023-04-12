@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct E_codes_Checker_AppApp: App {
+struct E_codes_Checker_App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
